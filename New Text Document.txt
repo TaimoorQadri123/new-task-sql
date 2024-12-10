@@ -1,0 +1,46 @@
+-- Q1)
+/* SELECT products.id,products.name as 'product' , products.price , brands.name as 'brand'
+FROM
+products
+INNER JOIN
+brands
+ON
+products.brand_id = brands.id
+ WHERE brands.name LIKE '%a%' */
+-- SELECT * FROM products WHERE products.name LIKE '%ix%'
+-- Q2) 
+  /* SELECT products.id, COUNT(products.name) as 'product' , products.price , brands.name as 'brand'
+FROM
+products
+INNER JOIN
+brands
+ON
+products.brand_id = brands.id
+ WHERE brands.name LIKE '%a%' */
+  
+  
+  -- wrong
+  
+ --  SELECT COUNT(products.Name)  as brandsNAME WHERE products.name LIKE 'avt%' FROM products 
+-- SELECT COUNT(products.id) totalcount , brands.name brandname FROM products INNER JOIN brands on products.brand_id = brands.id GROUP by brands.Name 
+
+--  SELECT * FROM products WHERE products.name like '%apple%'
+--  WHERE products.name LIKE 'avt%'
+--   Q3
+
+
+/* SELECT products.id, products.name as 'product' , SUM(products.price) , brands.name as 'brand'
+FROM
+products
+INNER JOIN
+brands
+ON
+products.brand_id = brands.id
+ WHERE brands.name LIKE '%samsung%' 
+ 
+ */
+ 
+ 
+ -- Q4 
+ 
+ -- (products.quantity*products.price)
